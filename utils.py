@@ -29,3 +29,4 @@ def encode_word(pos, pe, y, pc):
         pe[0][i + 1] = math.cos(pos / (1000 ** (2 * i / d_model)))
         pc[0][i + 1] = (y[0][i + 1] * math.sqrt(d_model)) + pe[0][i + 1]
     return pc
+print("ye")
